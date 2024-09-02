@@ -31,7 +31,7 @@ function ExMain() {
                         </div>
                     </div>
                     <div className='border-b border-b-gray-500 flex justify-between mt-5 mx-2 p-2'>
-                        <div>
+                        <div className='border-b-[5px] border-blue-500  rounded-b-sm   pb-1'>
                             <Link to="/explore/foryou">
                                 <p>For You</p>
                             </Link>
