@@ -26,8 +26,8 @@ import { CiLocationOn } from "react-icons/ci";
 function MiddleBox() {
     return (
         <div>
-            <div className='text-white w-[600px] h-auto border-green-500 border-2 '>
-                <div className='upper-middle flex justify-around   border-b-green-500 border-b-2 h-[65px] pt-4 cursor-pointer'>
+            <div className='text-white w-[600px] h-auto border-gray-500 border-2 '>
+                <div className='upper-middle flex justify-around   border-b-gray-500 border-b-2 h-[65px] pt-4 cursor-pointer'>
                     <p>For You</p>
                     <p>Following</p>
                 </div>
@@ -36,7 +36,7 @@ function MiddleBox() {
                     <input type="text" placeholder='What is happening?!' className=' bg-transparent border-transparent focus:outline-none focus:border-transparent' />
                 </div>
                 {/* <hr  className='w-4/5 mx-[10%]'/> */}
-                <div className='flex mt-8 items-center  border-green-500 border-b-2 pb-4'>
+                <div className='flex mt-8 items-center  border-gray-500 border-b-2 pb-4'>
                     <div className='flex gap-x-4 ml-16 w-[472px]'>
                         <MdInsertPhoto size={24} className='cursor-pointer'/>
                         <MdOutlineGifBox size={24} className='cursor-pointer'/>
@@ -52,12 +52,12 @@ function MiddleBox() {
                 </div>
 
 
-                <div className='flex items-center justify-center  border-b-green-500 border-b-2 '>
+                <div className='flex items-center justify-center  border-b-gray-500 border-b-2 '>
                     <p className='my-4'>Show 35 Posts</p>
                 </div>
 
 
-                <div className=' border-green-500 border-b-2'>
+                <div className=' border-gray-500 border-b-2'>
                     <Post
                         avatar={post1}
                         name="DR Pratik Patel, BA, CFA, ACCA Es"
@@ -80,7 +80,7 @@ function MiddleBox() {
                     
                 </div>
 
-                <div className=' border-green-500 border-b-2'>
+                <div className=' border-gray-500 border-b-2'>
                     <Post
                         avatar={post2}
                         name="Elon Musk"
@@ -97,7 +97,7 @@ function MiddleBox() {
                         />
                 </div>
 
-                <div className=' border-green-500 border-b-2'>
+                <div className=' border-gray-500 border-b-2'>
                 <Post
                         avatar={post3}
                         name="Times Algebra"
@@ -117,7 +117,7 @@ function MiddleBox() {
                             Impose President Rule in West Bengal" - CHIRAG`}
                         />
                 </div>
-                <div className=' border-green-500 border-b-2'>
+                <div className=' border-gray-500 border-b-2'>
                 <Post
                         avatar={post4}
                         name="Jitendra Sharma"
@@ -138,7 +138,7 @@ function MiddleBox() {
                                 10 मुख्य रचनाओं के लिए कृपया पूरा लेख`}
                         />
                 </div>
-                <div className=' border-green-500 border-b-2'>
+                <div className=' border-gray-500 border-b-2'>
                     <Post
                         avatar={post5}
                         name="Jitendra Sharma"
@@ -153,7 +153,7 @@ function MiddleBox() {
                     />
                 </div>
 
-                <div className=' border-green-500 border-b-2'>
+                <div className=' border-gray-500 border-b-2'>
                     <Post
                         avatar={post6}
                         name="Ashwini Vaishnaw"
@@ -170,7 +170,7 @@ function MiddleBox() {
                     />
                 </div>
 
-                <div className=' border-green-500 border-b-2'>
+                <div className=' border-gray-500 border-b-2'>
                     <Post
                         avatar={post7}
                         name="Jitendra Sharma"
