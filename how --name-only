@@ -1,0 +1,11 @@
+[33mcommit d96609643eb8563c2d4790e4e011279760cda490[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: ompatel585 <84760165+ompatel585@users.noreply.github.com>
+Date:   Mon Sep 2 18:52:14 2024 +0530
+
+    Updated styles and App.js, added new components and assets
+
+[33mcommit 480ba43cda4ada70570edba965cfd3c620c83f46[m
+Author: ompatel585 <84760165+ompatel585@users.noreply.github.com>
+Date:   Thu Aug 29 18:07:54 2024 +0530
+
+    Initialize project using Create React App
