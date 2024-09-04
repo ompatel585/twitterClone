@@ -74,15 +74,15 @@ function ExNews() {
                 </Link>
               </div>
               <div className='p-6'>
-                {newsData.map((news, index) => (
-                  <ExCardNews
-                    key={index}
-                    category={news.category}
-                    trendTitle={news.trendTitle}
-                    postCount={news.postCount}
-                  />
-                ))}
-              </div>
+              {newsData.map((news, index) => (
+                <ExCardNews
+                  key={index}
+                  category={news.category}
+                  trendTitle={news.trendTitle}
+                  postCount={news.postCount}
+                />
+              ))}
+            </div>
             </div>
           </div>
         </div>

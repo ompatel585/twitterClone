@@ -1,6 +1,7 @@
 import React from 'react';
+import { IoIosMore } from "react-icons/io";
 
-function ExCardNews() {
+function ExCardNews({ category, trendTitle, postCount }) {
   return (
     <div className="bg-gray-800 text-white p-4 rounded-lg shadow-md my-2 hover:bg-gray-700 transition-colors">
       <div className="text-md text-gray-400 flex">
