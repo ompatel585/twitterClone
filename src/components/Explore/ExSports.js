@@ -1,12 +1,26 @@
 import React from 'react';
 import ExMain from './ExMain';
 import LeftBox from '../Home/LeftBox';
-import ExCard from './ExCardSports'
+import ExCardSports from './ExCardSports'
 import { Link } from 'react-router-dom';
 import { IoSearch } from "react-icons/io5";
 import { IoIosSettings } from "react-icons/io";
 
 function ExSports() {
+
+  const sportsData = [
+    { category: 'Trending in Indian Premier League', trendTitle: 'Riyan Parag', postCount: '4,285 posts' },
+    { category: 'Trending in Sports', trendTitle: 'Duleep Trophy', postCount: '1,700 posts' },
+    { category: 'Trending in Sports', trendTitle: 'Hazard', postCount: '19.8K posts' },
+    { category: 'Trending in Sports', trendTitle: 'Nick Nelson', postCount: '1,415 posts' },
+    { category: 'Trending', trendTitle: "men's javelin throw f46", postCount: '10.2K posts' },
+    { category: 'Trending in Sports', trendTitle: 'Rajasthan Royals', postCount: '2,084 posts' },
+    { category: 'Trending in Sports', trendTitle: 'Rabiot', postCount: '35.5K posts' },
+    { category: 'Trending', trendTitle: 'Sachin Sarjerao Khilari', postCount: '1,148 posts' },
+    { category: 'Trending in UEFA Europa League', trendTitle: 'Cavani', postCount: '3,478 posts' },
+    { category: 'Trending in Sports', trendTitle: 'Thierry Henry', postCount: '1,974 posts' },
+  ];
+
   return (
     <div>
       <div className='flex h-screen text-white'>
@@ -60,44 +74,16 @@ function ExSports() {
                   <p>Entertainment</p>
                 </Link>
               </div>
-              <div>
-                <ExCard
-                  category="Entertainment"
-                  trendTitle="BoycottBollywood"
-                  postCount="22.5K"
+              <div className='p-6'>
+              {sportsData.map((sports, index) => (
+                <ExCardSports
+                  key={index}
+                  category={sports.category}
+                  trendTitle={sports.trendTitle}
+                  postCount={sports.postCount}
                 />
-
-                <ExCard
-                  category="News"
-                  trendTitle="ClimateChange"
-                  postCount="10.2K"
-                />
-
-                <ExCard
-                  category="TrendingIndia"
-                  trendTitle="Jailer 2"
-                  postCount="6.8K"
-                />
-
-                <ExCard
-                  category="Entertainment"
-                  trendTitle="TheGreatestAllTime"
-                  postCount="19.1K"
-                />
-
-                <ExCard
-                  category="Politics"
-                  trendTitle="Blood"
-                  postCount="6.9K"
-                />
-
-                <ExCard
-                  category="Sports"
-                  trendTitle="Diaz"
-                  postCount="29.1K"
-                />
-
-              </div>
+              ))}
+            </div>
             </div>
           </div>
         </div>

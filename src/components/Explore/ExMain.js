@@ -55,7 +55,7 @@ function ExMain() {
                             <p>Entertainment</p>
                         </Link>
                     </div>
-                    <div>
+                    <div className='p-6'>
                         <ExCard
                             category="Entertainment"
                             trendTitle="BoycottBollywood"

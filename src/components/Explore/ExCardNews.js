@@ -3,17 +3,14 @@ import { IoIosMore } from "react-icons/io";
 
 function ExCardNews({ category, trendTitle, postCount }) {
   return (
-    <div className="bg-gray-800 text-white p-4 rounded-lg shadow-md my-2 hover:bg-gray-700 transition-colors">
-      <div className="text-md text-gray-400 flex">
-        {category}
-        <IoIosMore size={24} className='ml-auto text-gray-400 hover:text-white transition-colors'/>
+    <div className="bg-gray-800 text-white p-4 mb-4 rounded-lg shadow-md my-2 hover:bg-gray-700 cursor-pointer transition-colors">
+      <div className='flex'>
+        <p className='text-gray-500 text-sm'>{category}</p>
+        <IoIosMore size={28} className='ml-auto' />
       </div>
-      <div className="text-lg font-bold my-1">
-        #{trendTitle}
-      </div>
-      <div className="text-sm text-gray-400">
-        {postCount}
-      </div>
+
+      <h3 className='text-white text-lg font-bold'>{trendTitle}</h3>
+      <p className='text-gray-500 text-sm'>{postCount} </p>
     </div>
   )
 }

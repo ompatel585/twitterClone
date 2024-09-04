@@ -73,7 +73,7 @@ function ExNews() {
                   <p>Entertainment</p>
                 </Link>
               </div>
-              <div className='p-6'>
+              <div className='p-6 '>
               {newsData.map((news, index) => (
                 <ExCardNews
                   key={index}

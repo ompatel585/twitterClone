@@ -1,12 +1,29 @@
 import React from 'react';
 import ExMain from './ExMain';
 import LeftBox from '../Home/LeftBox';
-import ExCard from './ExCardEntertainment'
+import ExCardEntertainment from './ExCardEntertainment';
 import { Link } from 'react-router-dom';
 import { IoSearch } from "react-icons/io5";
 import { IoIosSettings } from "react-icons/io";
 
 function ExEntertainment() {
+
+  const entertainmentData = [
+    { category: 'Trending in Entertainment', trendTitle: 'Hawk Tuah', postCount: '11K posts' },
+    { category: 'Trending in Entertainment', trendTitle: '#TheGOAT', postCount: 'Trending with #ThalapathyVijay, #TheGreatestOfAllTime' },
+    { category: 'Trending in Entertainment', trendTitle: '#JanhviKapoor', postCount: 'Trending with #Daavudi' },
+    { category: 'Trending in Music', trendTitle: 'SHINee', postCount: '26.7K posts' },
+    { category: 'Trending in Entertainment', trendTitle: '#Joker2', postCount: 'Trending with #JokerFolieADeux' },
+    { category: 'Trending in Entertainment', trendTitle: '#AnushkaSharma', postCount: '5,413 posts' },
+    { category: 'Trending in K-pop', trendTitle: 'Suho', postCount: '36.4K posts' },
+    { category: 'Trending in Music', trendTitle: 'Gose', postCount: '21.5K posts' },
+    { category: 'Trending in Entertainment', trendTitle: '#EmergencyMovie', postCount: '5,972 posts' },
+    { category: 'Trending in Music', trendTitle: '#FELIX_Unfair', postCount: '1,857 posts' },
+    { category: 'Trending in Music', trendTitle: 'hoshi', postCount: '54.5K posts' },
+    { category: 'Trending in Fashion & beauty', trendTitle: 'Tom Ford', postCount: '1,726 posts' },
+    { category: 'Trending in Entertainment', trendTitle: '#120Bahadur', postCount: 'Trending with #EkSauBeesBahadur' },
+  ];
+
   return (
     <div>
       <div className='flex h-screen text-white'>
@@ -62,44 +79,16 @@ function ExEntertainment() {
                   </Link>
                 </div>
               </div>
-              <div>
-                <ExCard
-                  category="Entertainment"
-                  trendTitle="BoycottBollywood"
-                  postCount="22.5K"
+              <div className='p-6'>
+              {entertainmentData.map((entertainment, index) => (
+                <ExCardEntertainment
+                  key={index}
+                  category={entertainment.category}
+                  trendTitle={entertainment.trendTitle}
+                  postCount={entertainment.postCount}
                 />
-
-                <ExCard
-                  category="News"
-                  trendTitle="ClimateChange"
-                  postCount="10.2K"
-                />
-
-                <ExCard
-                  category="TrendingIndia"
-                  trendTitle="Jailer 2"
-                  postCount="6.8K"
-                />
-
-                <ExCard
-                  category="Entertainment"
-                  trendTitle="TheGreatestAllTime"
-                  postCount="19.1K"
-                />
-
-                <ExCard
-                  category="Politics"
-                  trendTitle="Blood"
-                  postCount="6.9K"
-                />
-
-                <ExCard
-                  category="Sports"
-                  trendTitle="Diaz"
-                  postCount="29.1K"
-                />
-
-              </div>
+              ))}
+            </div>
             </div>
           </div>
         </div>
