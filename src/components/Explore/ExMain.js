@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ExCard from './ExCard';
+import ExCard from './ExCardForYou';
 
 import { IoSearch } from "react-icons/io5";
 import { IoIosSettings } from "react-icons/io";
@@ -12,8 +12,8 @@ function ExMain() {
     return (
         <div>
             <div className='text-white w-[650px]  h-screen'>
-                <div className=' border-2 border-green-600'>
-                    <div className='flex mt-4'>
+                <div className=' border-2 border-gray-500'>
+                    <div className='flex mt-4 ml-4 justify-around'>
                         <div className='flex items-center border-2   bg-gray-700 rounded-full  
                           w-[75%] h-[52.8px] '>
                             <div className='h-[52px] w-[50px] flex items-center justify-center '>

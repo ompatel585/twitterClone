@@ -1,7 +1,7 @@
 import React from 'react';
 import ExMain from './ExMain';
 import LeftBox from '../Home/LeftBox';
-import ExCard from './ExCard'
+import ExCard from './ExCardEntertainment'
 import { Link } from 'react-router-dom';
 import { IoSearch } from "react-icons/io5";
 import { IoIosSettings } from "react-icons/io";

@@ -1,12 +1,25 @@
 import React from 'react';
 import ExMain from './ExMain';
 import LeftBox from '../Home/LeftBox';
-import ExCard from './ExCard'
+import ExCardNews from './ExCardNews'
 import { Link } from 'react-router-dom';
 import { IoSearch } from "react-icons/io5";
 import { IoIosSettings } from "react-icons/io";
 
 function ExNews() {
+
+  const newsData = [
+    { category: 'Trending in Politics', trendTitle: 'Chinese Communist Party', postCount: '9,501 posts' },
+    { category: 'Trending in Politics', trendTitle: 'Venezuelans', postCount: '30.5K posts' },
+    { category: 'Trending in Politics', trendTitle: 'Poltava', postCount: '58.5K posts' },
+    { category: 'Trending in Politics', trendTitle: 'Rubbish', postCount: '22.4K posts' },
+    { category: 'Trending in Politics', trendTitle: 'Peter Obi', postCount: '38.1K posts' },
+    { category: 'Trending in Business & Finance', trendTitle: '#Qatar', postCount: '1,672 posts' },
+    { category: 'Trending in Business & Finance', trendTitle: 'XRP Ledger', postCount: '6,539 posts' },
+    { category: 'Trending', trendTitle: 'Walked', postCount: '68.4K posts' },
+    { category: 'Trending in Business & Finance', trendTitle: 'Dangote', postCount: '54.8K posts' },
+  ];
+
   return (
     <div>
       <div className='flex h-screen text-white'>
@@ -60,43 +73,15 @@ function ExNews() {
                   <p>Entertainment</p>
                 </Link>
               </div>
-              <div>
-                <ExCard
-                  category="Entertainment"
-                  trendTitle="BoycottBollywood"
-                  postCount="22.5K"
-                />
-
-                <ExCard
-                  category="News"
-                  trendTitle="ClimateChange"
-                  postCount="10.2K"
-                />
-
-                <ExCard
-                  category="TrendingIndia"
-                  trendTitle="Jailer 2"
-                  postCount="6.8K"
-                />
-
-                <ExCard
-                  category="Entertainment"
-                  trendTitle="TheGreatestAllTime"
-                  postCount="19.1K"
-                />
-
-                <ExCard
-                  category="Politics"
-                  trendTitle="Blood"
-                  postCount="6.9K"
-                />
-
-                <ExCard
-                  category="Sports"
-                  trendTitle="Diaz"
-                  postCount="29.1K"
-                />
-
+              <div className='p-6'>
+                {newsData.map((news, index) => (
+                  <ExCardNews
+                    key={index}
+                    category={news.category}
+                    trendTitle={news.trendTitle}
+                    postCount={news.postCount}
+                  />
+                ))}
               </div>
             </div>
           </div>
@@ -104,7 +89,7 @@ function ExNews() {
 
       </div>
     </div>
-    
+
   )
 }
 

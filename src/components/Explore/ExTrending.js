@@ -1,13 +1,27 @@
 import React from 'react';
 import ExMain from './ExMain';
 import LeftBox from '../Home/LeftBox';
-import ExCard from './ExCard'
+import ExCardTrending from './ExCardTrending'
 import { Link } from 'react-router-dom';
 import { IoSearch } from "react-icons/io5";
 import { IoIosSettings } from "react-icons/io";
 
 
 function ExTrending() {
+
+  const trendingData = [
+    { category: 'Trending', title: '#NaariMahaShakti', tweetsCount: '4,072 posts' },
+    { category: 'Politics · Trending', title: '#MukeshSharmaAgainstModi', tweetsCount: '6,424 posts' },
+    { category: 'Entertainment · Trending', title: '#RebelSaabBdayin50days', tweetsCount: '55.3K posts' },
+    { category: 'Technology · Trending', title: '#सत्संग_निमंत्रण', tweetsCount: '265K posts' },
+    { category: 'Entertainment · Trending', title: '#NivinPauly', tweetsCount: '2,514 posts' },
+    { category: 'Trending', title: 'विशाल भंडारा', tweetsCount: '99.4K posts' },
+    { category: 'Trending', title: 'अपर्णा यादव', tweetsCount: '' },
+    { category: 'Trending', title: 'मुकेश शर्मा', tweetsCount: '1,562 posts' },
+    { category: 'Politics · Trending', title: 'श्री पूनम चंद यादव', tweetsCount: '1,962 posts' },
+    { category: 'Trending', title: 'महिला आयोग', tweetsCount: '1,015 posts' },
+  ];
+
   return (
     <div>
       <div className='flex h-screen text-white'>
@@ -61,44 +75,18 @@ function ExTrending() {
                   <p>Entertainment</p>
                 </Link>
               </div>
-              <div>
-                <ExCard
-                  category="Entertainment"
-                  trendTitle="BoycottBollywood"
-                  postCount="22.5K"
-                />
-
-                <ExCard
-                  category="News"
-                  trendTitle="ClimateChange"
-                  postCount="10.2K"
-                />
-
-                <ExCard
-                  category="TrendingIndia"
-                  trendTitle="Jailer 2"
-                  postCount="6.8K"
-                />
-
-                <ExCard
-                  category="Entertainment"
-                  trendTitle="TheGreatestAllTime"
-                  postCount="19.1K"
-                />
-
-                <ExCard
-                  category="Politics"
-                  trendTitle="Blood"
-                  postCount="6.9K"
-                />
-
-                <ExCard
-                  category="Sports"
-                  trendTitle="Diaz"
-                  postCount="29.1K"
-                />
-
+              <div className='p-6'>
+                <h2 className='text-white text-2xl font-bold mb-4'>Trending</h2>
+                {trendingData.map((trend, index) => (
+                  <ExCardTrending
+                    key={index}
+                    category={trend.category}
+                    title={trend.title}
+                    tweetsCount={trend.tweetsCount}
+                  />
+                ))}
               </div>
+
             </div>
           </div>
         </div>
