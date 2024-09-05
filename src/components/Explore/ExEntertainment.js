@@ -5,6 +5,7 @@ import ExCardEntertainment from './ExCardEntertainment';
 import { Link } from 'react-router-dom';
 import { IoSearch } from "react-icons/io5";
 import { IoIosSettings } from "react-icons/io";
+import ExRightBox from './ExRightBox';
 
 function ExEntertainment() {
 
@@ -90,6 +91,9 @@ function ExEntertainment() {
               ))}
             </div>
             </div>
+          </div>
+          <div>
+            <ExRightBox />
           </div>
         </div>
 

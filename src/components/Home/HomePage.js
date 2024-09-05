@@ -6,7 +6,7 @@ import RightBox from './RightBox';
 function HomePage() {
   return (
     <div className="flex h-screen">
-      <div className="sticky top-0 w-1/4 h-full">
+      <div className="sticky top-0 w-[25%] h-full">
         <LeftBox />
       </div>
       <div className="flex overflow-y-auto  no-scrollbar">
