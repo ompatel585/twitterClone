@@ -11,6 +11,9 @@ import ExTrending from './components/Explore/ExTrending';
 import ExNews from './components/Explore/ExNews';
 import ExSports from './components/Explore/ExSports';
 import ExEntertainment from './components/Explore/ExEntertainment';
+import NotificationAll from './components/Notifications/NotificationAll';
+import NotificationMention from './components/Notifications/NotificationMention';
+import NotificationVerified from './components/Notifications/NotificationVerified';
 import './App.css';
 
 function App() {
@@ -29,6 +32,9 @@ function App() {
           <Route path="/messages" element={<Messages />} />
           <Route path="/grok" element={<Grok />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/notifications/all" element={<NotificationAll />} />
+          <Route path="/notifications/verified" element={<NotificationVerified />} />
+          <Route path="/notifications/mentions" element={<NotificationMention />} />
         </Routes>
       </Router>
     </div>

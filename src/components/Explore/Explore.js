@@ -4,7 +4,7 @@ import ExMain from './ExMain';
 
 function Explore() {
     return (
-        <div className='flex h-screen text-white'>
+        <div className='flex h-screen text-white font-normal'>
 
             <div className="sticky top-0 w-1/4 h-full">
                 <LeftBox />

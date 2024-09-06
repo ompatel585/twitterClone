@@ -4,7 +4,7 @@ import { IoIosSettings } from "react-icons/io";
 import NotificationRight from './NotificationRight';
 import { Link } from 'react-router-dom';
 
-function Notifications() {
+function NotificationAll() {
   return (
     <div className='flex h-full text-white font-normal'>
 
@@ -60,4 +60,4 @@ function Notifications() {
   )
 }
 
-export default Notifications;
+export default NotificationAll;

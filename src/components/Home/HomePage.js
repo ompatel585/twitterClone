@@ -5,7 +5,7 @@ import RightBox from './RightBox';
 
 function HomePage() {
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen font-normal">
       <div className="sticky top-0 w-[25%] h-full">
         <LeftBox />
       </div>

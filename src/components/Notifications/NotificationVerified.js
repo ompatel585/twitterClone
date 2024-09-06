@@ -3,8 +3,9 @@ import LeftBox from '../Home/LeftBox';
 import { IoIosSettings } from "react-icons/io";
 import NotificationRight from './NotificationRight';
 import { Link } from 'react-router-dom';
+import NotificationsVerifiedImg from '../../assets/notificationsVerifiedImg.png';
 
-function Notifications() {
+function NotificationVerified() {
   return (
     <div className='flex h-full text-white font-normal'>
 
@@ -24,13 +25,13 @@ function Notifications() {
 
               </div>
               <div className='flex justify-around font-semibold text-[18px] mt-8 pb-2 border-b-2 border-b-gray-700'>
-                <div className='border-b-[4px] border-blue-500  rounded-b-sm   pb-1'>
+                <div>
                   <Link to="/notifications/all">
                     <p>All</p>
                   </Link>
                 </div>
 
-                <div>
+                <div className='border-b-[4px] border-blue-500  rounded-b-sm   pb-1'>
                   <Link to="/notifications/verified">
                     <p>Verified</p>
                   </Link>
@@ -41,6 +42,9 @@ function Notifications() {
                   </Link>
                 </div>
               </div>
+            </div>
+            <div>
+                <img src={NotificationsVerifiedImg} alt="" />
             </div>
             <div className='ml-[16%] mt-10'>
               <p className='text-[30px] font-extrabold' >Nothing to see here </p>
@@ -60,4 +64,4 @@ function Notifications() {
   )
 }
 
-export default Notifications;
+export default NotificationVerified;
